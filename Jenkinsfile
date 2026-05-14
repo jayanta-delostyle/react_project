@@ -26,7 +26,7 @@ pipeline {
             steps {
             sh ''' 
                 echo "This is a test by jay"
-                test -f dist/jjj.html
+                test -f dist/index.html
             '''
             }
         }
