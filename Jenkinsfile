@@ -22,5 +22,13 @@ pipeline {
                 '''
             }
         }
+        stage('test')  {
+            steps {
+            sh ''' 
+                echo "This is a test by jay"
+                test -f dist/index.html
+            '''
+            }
+        }
     }
 }
